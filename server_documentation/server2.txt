@@ -1,0 +1,43 @@
+Steve´s Car Rental Server Environment Documentation
+
+Server Details
+Server Name:
+- stevescarrental.example.fi
+Server IP Address:
+- 192.168.1.12
+Server Operating System:
+- Windows Server 2022
+
+Cloud Provider:
+- Azure. The Azure region is: “eastus”. The account id is 471471. Credentials can be
+found in LastPass shared folder: “steves-car-rental-shared”.
+
+SSH Access:
+To access the server via SSH, use the following command:
+- $ ssh username@stevescarrental.example.fi
+
+SSH Keys:
+The necessary SSH keys can be found in LastPass shared folder:
+“steves-car-rental-shared”.
+
+Server Maintenance Times:
+Maintenance windows are scheduled on the third Saturday of every month between 09:00
+PM and 5:00 AM EST. During these times, the server may be unavailable for brief periods
+while updates are applied.
+
+IP Address Management:
+IP addresses are managed using DHCP. If you need to reserve a specific IP address for a
+server, please contact the network administrator.
+
+Software Running on the Servers
+● NGINX version 1.20.1
+● PostgreSQL version 13.6
+● Python version 3.10.0
+● Memcached version 1.6.12
+● MongoDB version 5.0.5
+
+Build new version:
+Sign in to the customers github environment at: https://carrental.github.com/. Credentials can
+be found in LastPass. Run the pipeline “deploy main rental codee”. After running the
+pipeline, restart the entire server. Note this will take the application offline for over 15
+minutes!

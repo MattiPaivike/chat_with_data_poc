@@ -1,0 +1,43 @@
+Big Corp Server Environment Documentation
+
+Server Details
+
+Server Name:
+- bigcorp.example.com
+Server IP Address:
+- 192.168.1.4
+Server Operating System:
+- Windows Server 2008 R2
+
+Cloud Provider:
+- Azure. The Azure region is: “westeu”. The account id is 4174174167147. Credentials
+can be found in LastPass shared folder: “big-corp-shared”.
+
+SSH Access:
+To access the server via SSH, use the following command:
+- $ ssh username@stevescarrental.example.fi
+
+SSH Keys:
+The necessary SSH keys can be found in LastPass shared folder: “big-corp-shared”.
+Server Maintenance Times
+Maintenance windows are scheduled on the third Saturday of every month between 04:00
+PM and 7:00 AM EST. During these times, the server may be unavailable for brief periods
+while updates are applied.
+
+IP Address Management:
+IP addresses are managed using DHCP. If you need to reserve a specific IP address for a
+server, please contact the network administrator.
+
+Software Running on the Servers:
+● Microsoft IIS version 10.0.17763.1
+● Microsoft SQL Server version 15.0.4153.1
+● .NET Core version 5.0.401
+● Redis version 6.2.5
+● Apache Kafka version 3.1.0
+
+Build new version:
+- Clone the code repository from: https://customerbigcorp.coderepo.com/main
+- Make changes to the code and commit your changes.
+- Run build script build_big.sh
+- Set env variables USER and PASS and the run deploy.sh, these can be found in
+LastPass: “big-corp-shared”.

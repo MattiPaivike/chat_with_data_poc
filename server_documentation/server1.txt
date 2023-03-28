@@ -1,0 +1,40 @@
+Big Bank Server Environment Documentation
+
+Server Details
+
+Server Name:
+- bigbank.example.com
+Server IP Address:
+- 192.168.1.9
+Server Operating System:
+- Ubuntu 20.04
+
+Cloud Provider:
+- AWS, region eu-west-1. The AWS account id is 12541351. Credentials can be found in LastPass shared folder: “big-bank-shared”.
+
+SSH Access:
+To access the server via SSH, use the following command:
+- $ ssh username@anotherserver.example.com
+
+SSH Keys:
+The necessary SSH keys can be found in LastPass shared folder: "big-bank-shared".
+
+Server Maintenance Times:
+Maintenance windows are scheduled on the third Saturday of every month between 10:00 PM and 1:00 AM EST. 
+During these times, the server may be unavailable for brief periods while updates are applied.
+
+IP Address Management:
+IP addresses are managed using DHCP. If you need to reserve a specific IP address for a
+server, please contact the network administrator.
+
+Software Running on the Servers:
+● Apache HTTP Server version 2.4.51
+● MySQL version 8.0.27
+● PHP version 8.0.14
+● Redis version 6.2.6
+● Elasticsearch version 7.16.3
+
+Build new version:
+Sign in to the customers gitlab environment at: https://bigbank.gitlab.com/banksoftware.
+Credentials can be found in LastPass. Run the pipeline “deploy main code”. After running
+the pipeline, restart Apache on the server

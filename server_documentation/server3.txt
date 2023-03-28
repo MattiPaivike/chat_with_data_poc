@@ -1,0 +1,43 @@
+Rand Corporation Server Environment Documentation
+
+Server Details
+
+Server Name:
+- randcorporation.example.fi
+Server IP Address:
+- 192.168.1.3
+Server Operating System:
+- Linux Redhat 9.1
+
+Cloud Provider:
+- Azure. The Azure region is: “westus”. The account id is 16147174. Credentials can
+be found in LastPass shared folder: “rand-corp-shared”.
+
+SSH Access:
+To access the server via SSH, use the following command:
+- $ ssh username@stevescarrental.example.fi
+
+SSH Keys:
+The necessary SSH keys can be found in LastPass shared folder: “rand-corp-shared”.
+
+Server Maintenance Times:
+Maintenance windows are scheduled on the third Saturday of every month between 02:00
+PM and 17:00 AM EST. During these times, the server may be unavailable for brief periods
+while updates are applied.
+
+IP Address Management:
+IP addresses are managed using DHCP. If you need to reserve a specific IP address for a
+server, please contact the network administrator.
+
+Software Running on the Servers
+● Apache Tomcat version 10.1.0
+● MariaDB version 10.6.5
+● Ruby version 3.1.1
+● RabbitMQ version 3.9.7
+● Cassandra version 4.0.1
+
+Build new version
+- Clone the code repository from: https://example.customergithub.com/maincode
+- Make changes to the code and commit your changes.
+- Run build script build.sh
+- Set env variables ENV1 and ENV2 and the run deploy.sh
